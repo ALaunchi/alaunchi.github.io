@@ -84,6 +84,12 @@ section.block p.sub { color: var(--muted); margin: 0 0 32px; }
 .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .pill { font-size: 13px; padding: 6px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--border); color: var(--text); }
 
+.notice { max-width: 760px; }
+.notice h3 { font-size: 17px; margin: 28px 0 8px; color: #fff; }
+.notice p, .notice li { color: #d1d5db; font-size: 15px; }
+.notice ul { padding-left: 22px; margin: 0 0 8px; }
+.notice li { margin: 4px 0; }
+
 /* Legal pages */
 .legal { max-width: 780px; padding: 56px 20px 72px; margin: 0 auto; }
 .legal h1 { font-size: 36px; margin: 0 0 6px; color: #fff; }
