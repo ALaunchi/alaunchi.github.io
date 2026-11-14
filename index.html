@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALaunchi — Launcher de Minecraft</title>
+  <meta name="description" content="ALaunchi es un launcher de Minecraft gratuito para Windows: instala y actualiza modpacks, gestiona mods de Modrinth, skins y juega con tus amigos.">
+  <meta property="og:title" content="ALaunchi — Launcher de Minecraft">
+  <meta property="og:description" content="Instala y actualiza modpacks, gestiona mods, skins y juega con tus amigos.">
+  <meta property="og:image" content="https://alaunchi.github.io/assets/logo.png">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt=""><span>ALaunchi</span></a>
+      <nav class="links">
+        <a href="#funciones">Funciones</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Tu launcher de <span class="grad">Minecraft</span>, a tu manera.</h1>
+        <p class="lead">
+          ALaunchi instala y mantiene al día tus modpacks, gestiona mods, shaders y skins,
+          y te deja jugar con tus amigos en instancias compartidas. Gratis y sin anuncios.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" id="download" href="https://github.com/tomaamns-glitch/alaunchi-release/releases/latest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span id="download-label">Descargar para Windows</span>
+          </a>
+          <a class="btn btn-ghost" href="#funciones">Ver funciones</a>
+          <p class="cta-note" id="download-note">Windows 10 / 11 · Necesitas una cuenta de Minecraft: Java Edition.</p>
+        </div>
+      </div>
+      <img class="hero-logo" src="assets/logo.png" alt="Logo de ALaunchi">
+    </section>
+
+    <section class="block" id="funciones">
+      <h2>Qué hace ALaunchi</h2>
+      <p class="sub">Todo lo que necesitas para jugar con mods, sin pelearte con carpetas ni versiones.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg></div>
+          <h3>Modpacks al día</h3>
+          <p>Instala y actualiza modpacks con un clic. Antes de cada actualización ves sus novedades.</p>
+        </div>
+        <div class="card">
+          <div class="icon o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Mods, shaders y texturas</h3>
+          <p>Busca e instala contenido de Modrinth: filtra por categoría, ordena y actualiza lo que tengas.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Forge, NeoForge y Fabric</h3>
+          <p>Instala el modloader correcto y la versión de Java que necesita cada instancia, sin hacer nada.</p>
+        </div>
+        <div class="card">
+          <div class="icon o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg></div>
+          <h3>Skins y capas</h3>
+          <p>Cambia tu skin y tu capa, guarda una biblioteca de skins y míralas en un visor 3D animado.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Juega con tus amigos</h3>
+          <p>Amigos, chat, instancias online compartidas con código de acceso y un panel dentro del juego.</p>
+        </div>
+        <div class="card">
+          <div class="icon o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Diagnóstico de crasheos</h3>
+          <p>Si el juego se cierra, ALaunchi lee el informe y te dice qué mod falla y cómo arreglarlo.</p>
+        </div>
+      </div>
+      <div class="pill-list">
+        <span class="pill">Inicio de sesión oficial de Microsoft</span>
+        <span class="pill">Sin anuncios</span>
+        <span class="pill">Sin analíticas</span>
+        <span class="pill">Gratis</span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Tu cuenta, segura</h2>
+      <p class="sub" style="margin-bottom:16px">
+        Inicias sesión con la página oficial de Microsoft: ALaunchi nunca ve tu contraseña, y la sesión se guarda
+        cifrada solo en tu ordenador. Puedes borrar tus datos de nuestros servidores cuando quieras desde
+        Ajustes → Mi cuenta. Todo explicado en la <a href="privacidad.html">política de privacidad</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 ALaunchi · <a href="mailto:alaunchi.support@gmail.com">alaunchi.support@gmail.com</a></span>
+      <div class="links">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos de uso</a>
+        <a href="https://github.com/tomaamns-glitch/alaunchi-release/releases">Versiones</a>
+      </div>
+      <p class="disclaimer">NO ES UN PRODUCTO OFICIAL DE MINECRAFT. NO ESTÁ APROBADO NI ASOCIADO CON MOJANG NI MICROSOFT.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Points the button straight at the latest installer (.exe). Without
+    // network or if GitHub's API fails, it stays on the releases page.
+    fetch("https://api.github.com/repos/tomaamns-glitch/alaunchi-release/releases/latest")
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((rel) => {
+        const exe = (rel.assets || []).find((a) => /\.exe$/i.test(a.name));
+        if (!exe) return;
+        document.getElementById("download").href = exe.browser_download_url;
+        const version = String(rel.tag_name || "").replace(/^v/, "");
+        const mb = (exe.size / 1048576).toFixed(0);
+        document.getElementById("download-note").textContent =
+          `Versión ${version} · ${mb} MB · Windows 10 / 11 · Necesitas una cuenta de Minecraft: Java Edition.`;
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
