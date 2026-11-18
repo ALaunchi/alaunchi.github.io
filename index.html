@@ -31,11 +31,14 @@
           Sirve para instalar y mantener al día los modpacks con los que jugamos juntos.
         </p>
         <div class="cta">
-          <a class="btn btn-primary" id="download" href="https://github.com/tomaamns-glitch/alaunchi-release/releases/latest">
+          <!-- Fixed on purpose to an installer already reviewed by Microsoft (SmartScreen/Defender);
+               the app auto-updates to the latest version on first launch. Keep this release on GitHub. -->
+          <a class="btn btn-primary" id="download" href="https://github.com/tomaamns-glitch/alaunchi-release/releases/download/v1.9.47/ALaunchi-Setup-1.9.47.exe">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
             <span>Descargar para Windows</span>
           </a>
-          <p class="cta-note" id="download-note">Windows 10 / 11 · Necesitas una cuenta de Minecraft: Java Edition.</p>
+          <p class="cta-note" id="download-note">117 MB · Windows 10 / 11 · Necesitas una cuenta de Minecraft: Java Edition.</p>
+          <p class="cta-note">Al abrirla por primera vez se actualiza sola a la última versión.</p>
           <p class="cta-note">¿Te sale un aviso de Windows o del antivirus? <a href="#avisos">Mira por qué y qué hacer</a>.</p>
         </div>
         <p class="cta-note" style="margin-top:28px">
@@ -97,21 +100,5 @@
     </div>
   </footer>
 
-  <script>
-    // Points the button straight at the latest installer (.exe). Without
-    // network or if GitHub's API fails, it stays on the releases page.
-    fetch("https://api.github.com/repos/tomaamns-glitch/alaunchi-release/releases/latest")
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((rel) => {
-        const exe = (rel.assets || []).find((a) => /\.exe$/i.test(a.name));
-        if (!exe) return;
-        document.getElementById("download").href = exe.browser_download_url;
-        const version = String(rel.tag_name || "").replace(/^v/, "");
-        const mb = (exe.size / 1048576).toFixed(0);
-        document.getElementById("download-note").textContent =
-          `Versión ${version} · ${mb} MB · Windows 10 / 11 · Necesitas una cuenta de Minecraft: Java Edition.`;
-      })
-      .catch(() => {});
-  </script>
 </body>
 </html>
